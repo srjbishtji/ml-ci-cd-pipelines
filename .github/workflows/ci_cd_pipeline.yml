@@ -22,10 +22,10 @@ jobs:
         pip install -r requirements.txt
     - name: Train Model
       run: |
-        python models/train.py  # Updated directory path to 'models'
+        python model/train.py  # Updated directory path to 'model'
     - name: Evaluate Model
       run: |
-        python models/evaluate.py  # Updated directory path to 'models'
+        python model/evaluate.py  # Updated directory path to 'model'
     - name: Run Unit Tests
       run: |
         python -m unittest discover -s tests  # Ensure 'tests' folder and files are set up correctly
